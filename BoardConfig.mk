@@ -80,11 +80,8 @@ TW_NO_SCREEN_TIMEOUT := true
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 
 TW_BRIGHTNESS_PATH := /sys/class/backlight/panel0-backlight/brightness
-TW_MAX_BRIGHTNESS := 4095 
-TW_DEFAULT_BRIGHTNESS := 2048 
-
-# Include python, for ABX conversion
-TW_INCLUDE_PYTHON := true
+TW_MAX_BRIGHTNESS := 4095
+TW_DEFAULT_BRIGHTNESS := 2048
 
 TARGET_RECOVERY_DEVICE_MODULES += \
     libion
