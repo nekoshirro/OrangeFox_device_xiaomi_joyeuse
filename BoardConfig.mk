@@ -10,6 +10,12 @@ DEVICE_PATH := device/xiaomi/joyeuse
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
+# Cure for "ELF binaries" problems
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
+# Deal with "error: overriding commands for target" problems
+BUILD_BROKEN_DUP_RULES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
